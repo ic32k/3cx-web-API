@@ -40,7 +40,7 @@ sudo apt-get update; \ sudo apt-get install -y apt-transport-https && \ sudo apt
 **Bevore compile, you need to edit the **  *WebAPICore.csproj*
 - remove *`<Private>false</Private>`* in <ItemGroup> for 3cxpscomcpp2
 - edit path: `<HintPath>..\..\..\Program Files\3CX Phone System\Bin\3cxpscomcpp2.dll</HintPath>` to `<HintPath>/usr/lib/3cxpbx/3cxpscomcpp2.dll</HintPath>` 
-
+**Also can move the DLL to the Web-API directory
 
 ```bash
 dotnet build WebAPICore.csproj
@@ -83,5 +83,6 @@ URL: http://ip:port/action/arg1/arg2/.....
 - atttrans
 - setstatus
 - showstatus
+- update
 - stop
 
